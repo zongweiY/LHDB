@@ -15,6 +15,8 @@
 		C92476341D36257700BABA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92476321D36257700BABA53 /* LaunchScreen.storyboard */; };
 		C924763F1D36257700BABA53 /* LHDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C924763E1D36257700BABA53 /* LHDBTests.m */; };
 		C924764A1D36257700BABA53 /* LHDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C92476491D36257700BABA53 /* LHDBUITests.m */; };
+		C924765C1D36420B00BABA53 /* LHDictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = C924765A1D36420B00BABA53 /* LHDictionary.c */; };
+		C92476601D3643EA00BABA53 /* LHArray.c in Sources */ = {isa = PBXBuildFile; fileRef = C924765E1D3643EA00BABA53 /* LHArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		C92476451D36257700BABA53 /* LHDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92476491D36257700BABA53 /* LHDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHDBUITests.m; sourceTree = "<group>"; };
 		C924764B1D36257700BABA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C924765A1D36420B00BABA53 /* LHDictionary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LHDictionary.c; sourceTree = "<group>"; };
+		C924765B1D36420B00BABA53 /* LHDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHDictionary.h; sourceTree = "<group>"; };
+		C924765E1D3643EA00BABA53 /* LHArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LHArray.c; sourceTree = "<group>"; };
+		C924765F1D3643EA00BABA53 /* LHArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,8 @@
 		C92476181D36257700BABA53 = {
 			isa = PBXGroup;
 			children = (
-				C92476231D36257700BABA53 /* LHDB */,
+				C92476571D36417A00BABA53 /* frame */,
+				C92476231D36257700BABA53 /* LHDBDemo */,
 				C924763D1D36257700BABA53 /* LHDBTests */,
 				C92476481D36257700BABA53 /* LHDBUITests */,
 				C92476221D36257700BABA53 /* Products */,
@@ -98,7 +105,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C92476231D36257700BABA53 /* LHDB */ = {
+		C92476231D36257700BABA53 /* LHDBDemo */ = {
 			isa = PBXGroup;
 			children = (
 				C92476271D36257700BABA53 /* AppDelegate.h */,
@@ -111,6 +118,7 @@
 				C92476351D36257700BABA53 /* Info.plist */,
 				C92476241D36257700BABA53 /* Supporting Files */,
 			);
+			name = LHDBDemo;
 			path = LHDB;
 			sourceTree = "<group>";
 		};
@@ -138,6 +146,41 @@
 				C924764B1D36257700BABA53 /* Info.plist */,
 			);
 			path = LHDBUITests;
+			sourceTree = "<group>";
+		};
+		C92476571D36417A00BABA53 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				C924765D1D36422100BABA53 /* LHArray */,
+				C92476591D3641EA00BABA53 /* LHDictionary */,
+				C92476581D3641DD00BABA53 /* LHDB */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		C92476581D3641DD00BABA53 /* LHDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LHDB;
+			sourceTree = "<group>";
+		};
+		C92476591D3641EA00BABA53 /* LHDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C924765A1D36420B00BABA53 /* LHDictionary.c */,
+				C924765B1D36420B00BABA53 /* LHDictionary.h */,
+			);
+			path = LHDictionary;
+			sourceTree = "<group>";
+		};
+		C924765D1D36422100BABA53 /* LHArray */ = {
+			isa = PBXGroup;
+			children = (
+				C924765E1D3643EA00BABA53 /* LHArray.c */,
+				C924765F1D3643EA00BABA53 /* LHArray.h */,
+			);
+			path = LHArray;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C924762C1D36257700BABA53 /* ViewController.m in Sources */,
+				C924765C1D36420B00BABA53 /* LHDictionary.c in Sources */,
 				C92476291D36257700BABA53 /* AppDelegate.m in Sources */,
+				C92476601D3643EA00BABA53 /* LHArray.c in Sources */,
 				C92476261D36257700BABA53 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
